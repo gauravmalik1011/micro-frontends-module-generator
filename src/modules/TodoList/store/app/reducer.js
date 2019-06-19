@@ -44,11 +44,6 @@ const markTask = (state, { taskId, isDone }) => {
 const todoListData = (state = initState, action) => {
   switch (action.type) {
     case ActionTypes.INIT: {
-      const data = {
-        ...state,
-        ...action.state.TodoList
-      };
-      console.log(data)
       return {
         ...state,
         ...action.state.TodoList
