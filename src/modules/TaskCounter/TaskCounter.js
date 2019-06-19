@@ -17,6 +17,8 @@ const TaskCounter = ({ todos }) => {
 };
 
 const mapStateToProps = state => {
+  console.log('here');
+  console.log(state.rootState);
   if (state.rootState.TodoList) {
     return { todos: state.rootState.TodoList.todos };
   }
