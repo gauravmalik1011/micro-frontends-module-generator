@@ -16,16 +16,12 @@ class AddTodo extends React.Component {
   };
 
   render = () => {
-    const Text = styled.h4`
-      font-size:1rem;
-      color: red;
-    `;
     const ComponentWrapper = styled.div`
       padding-left: 1rem!important;  
     `;
     return (
       <ComponentWrapper>
-        <Text>Add new Task</Text>
+        <h4>Add new Task</h4>
         <form onSubmit={this.onFormSubmit}>
           <div className="row align-items-start">
             <div className="form-group col">

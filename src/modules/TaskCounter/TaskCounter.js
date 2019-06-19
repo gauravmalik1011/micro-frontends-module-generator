@@ -12,6 +12,10 @@ const TaskCounter = ({ todos }) => {
       <p className="display-3 text-center count">
         {todos ? todos.length : null}
       </p>
+      {/* <h4>Completed Tasks:</h4>
+      <p className="display-3 text-center count">
+        {todos ? todos.filter((todo) => (todo.done)).length : null}
+      </p> */}
     </div>
   );
 };
